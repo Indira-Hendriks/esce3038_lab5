@@ -1,10 +1,10 @@
 #include <Arduino.h>
 #include <WiFi.h>
-#include <WiFiClientSecure.h>  
+#include <WiFiClientSecure.h>  // Secure client for HTTPS
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
-#include <LiquidCrystal_I2C.h>  
-#include "env.h"                
+#include <LiquidCrystal_I2C.h>  // LCD Library
+#include "env.h"                // Load WiFi credentials & API info
 
 // Define if running on Wokwi
 #define IS_WOKWI true
@@ -114,3 +114,4 @@ void loop() {
     http.end();
     delay(5000);
 }
+
